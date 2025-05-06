@@ -52,7 +52,7 @@ header button img{
 
 #calculator{
     margin-top: 5%;
-    max-width: 80vw;
+    width: 75vw;
     margin: 5% auto;
 
 }
@@ -65,6 +65,7 @@ header button img{
     justify-content: center;
     align-items: center;
     padding: 5%;
+    
 }
 #calculator-content br{
     margin-top: 5px;
@@ -137,7 +138,7 @@ label img{
 }
 
 .reset-btn {
-    grid-column: span 3;
+    grid-column: span 2;
     background-color: #ff3333;
     color: white;
 }
@@ -155,4 +156,8 @@ label img{
 #calculator-btns2 button:hover {
     transition: 0.2s;
     scale: 1.1;
+}
+#calculator-btns2 button:active {
+    transition: 0.2s;
+    scale: 0.9;
 }

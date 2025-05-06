@@ -63,3 +63,8 @@ function reset2(){
     document.getElementById("calculator-display2").value = "";
 }
 
+// Function to delete the last character from the display
+function deleteLast(){
+    const display = document.getElementById("calculator-display2");
+    display.value = display.value.slice(0, -1);
+}
