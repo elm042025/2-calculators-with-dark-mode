@@ -54,7 +54,7 @@ function inpValue(value){
     document.getElementById("calculator-display2").value += value;
 }
 
-function res(){
+function calculate2(){
     const result = eval(document.getElementById("calculator-display2").value);
     document.getElementById("calculator-display2").value = result;
 }
