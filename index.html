@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript training/demo</title>
+  </head>
+
+  <body>
+    <header>
+      <p id="header-logo">LOGO</p>
+      <h1>Dark mode and calculator assignment</h1>
+      <button
+        id="theme-button"
+        type="button"
+        onclick="themeFunction()"
+        title="Switch theme"
+      >
+        <img src="icons/day-and-night-icon.svg" alt="theme icon" />
+      </button>
+    </header>
+
+    <div id="calculator">
+      <div id="calculator-content">
+        <h2>Simple calculator</h2>
+        <br />
+        <div id="num1">
+          <label for="nr1"><img src="icons/input-numbers.svg" alt="" /></label>
+          <input id="nr1" type="number" placeholder="input number" />
+        </div>
+        <br />
+
+        <div id="opr">
+          <label for="operator"
+            ><img src="icons/symbol-operator.svg" alt=""
+          /></label>
+          <select id="operator">
+            <option value=" "></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+          </select>
+        </div>
+        <br />
+
+        <div id="num2">
+          <label for="nr2"><img src="icons/input-numbers.svg" alt="" /></label>
+          <input id="nr2" type="number" placeholder="input number" />
+        </div>
+        <br />
+
+        <div id="calculator-btns">
+          <button id="calculat-btn" onclick="calculate()">Calculate</button>
+          <br />
+          <button id="reset-btn" onclick="reset()">Reset</button>
+        </div>
+
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <!-- calaculator 2 starts here one that looks normal? -->
+
+    <div id="calculator2">
+      <div>
+        <input id="calculator-display2" type="text" readonly />
+      </div>
+
+      <div id="calculator-btns2">
+        <button onclick="inpValue('7')">7</button>
+        <button onclick="inpValue('8')">8</button>
+        <button onclick="inpValue('9')">9</button>
+        <button onclick="inpValue('/')">/</button>
+
+        <button onclick="inpValue('4')">4</button>
+        <button onclick="inpValue('5')">5</button>
+        <button onclick="inpValue('6')">6</button>
+        <button onclick="inpValue('*')">*</button>
+
+        <button onclick="inpValue('1')">1</button>
+        <button onclick="inpValue('2')">2</button>
+        <button onclick="inpValue('3')">3</button>
+        <button onclick="inpValue('-')">-</button>
+
+        <button onclick="inpValue('0')">0</button>
+        <button onclick="inpValue('.')">.</button>
+        <button onclick="inpValue('+')">+</button>
+        <button onclick="inpValue('/100')">%</button>
+
+        <button onclick="inpValue('**')">^</button>
+        <button onclick="reset2()" class="reset-btn">C</button>
+        <button onclick="res()" class="equal-btn">=</button>
+      </div>
+    </div>
+  </body>
+</html>
