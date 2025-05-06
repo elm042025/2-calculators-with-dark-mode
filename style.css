@@ -107,7 +107,7 @@ label img{
 
 #calculator2 {
     max-width: fit-content;
-    margin: auto;
+    margin: 5% auto;
     padding: 5%;
     border: solid 3px #000000;
     border-radius: 8px;
@@ -115,7 +115,7 @@ label img{
 }
 
 #calculator-display2 {
-    max-width: 100%;
+    max-width: 90%;
     font-size: 2rem;
     margin: 10px auto;
     padding: 10px;
