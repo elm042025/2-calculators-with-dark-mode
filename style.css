@@ -45,6 +45,10 @@ header button:hover{
     transition: 0.2s;
     scale: 1.1;
 }
+header button:active{
+    transition: 0.2s;
+    scale: 0.9;
+}
 header button img{
     max-width: 48px;
     max-height: auto;
