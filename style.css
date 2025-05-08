@@ -33,25 +33,19 @@ header h1{
     
 }
 header button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    margin-top: 1%;
+    border: none;
     cursor: pointer;
     border: none;
-    background-color: #ffffff;
-    line-height: 0;
+    background-color: #ffffff00;
 }
 header button:hover{
-    transition: 0.2s;
+    transition: 0.3s;
     scale: 1.1;
 }
 header button:active{
-    transition: 0.2s;
+    transition: 0.3s;
     scale: 0.9;
-}
-header button img{
-    max-width: 48px;
-    max-height: auto;
 }
 
 #calculator{
