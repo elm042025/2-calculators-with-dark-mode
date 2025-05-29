@@ -98,7 +98,7 @@
           <button id="reset-btn" onclick="reset()">Reset</button>
         </div>
 
-        <p id="result">Result:</p>
+        <p id="result" aria-live="polite">Result:</p>
       </div>
     </div>
 
@@ -106,7 +106,12 @@
 
     <div id="calculator2">
       <div>
-        <input id="calculator-display2" type="text" readonly />
+        <input
+          id="calculator-display2"
+          type="text"
+          readonly
+          aria-live="polite"
+        />
       </div>
 
       <div id="calculator-btns2">
