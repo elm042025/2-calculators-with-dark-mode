@@ -6,6 +6,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 .dark-mode {
   background-color: #131313;
@@ -20,13 +21,12 @@
 }
 
 header {
-  padding: 1%;
+  padding: 1rem;
   border: solid 3px #333333;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: fit-content;
   max-height: 40px;
 }
 
@@ -51,7 +51,7 @@ header button:active {
 
 #calculator {
   margin-top: 5%;
-  width: 75vw;
+  width: 475px;
   margin: 5% auto;
 }
 
@@ -67,6 +67,26 @@ header button:active {
 #calculator-content br {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+input {
+  border-radius: 10px;
+  border: solid 1px #333;
+  padding: 5px;
+  width: 100%;
+  font-size: large;
+  text-align: center;
+}
+#operator {
+  border: solid 1px #333;
+  border-radius: 10px;
+  padding: 5px;
+}
+#num1 input:hover,
+#num2 input:hover,
+#operator:hover {
+  transition: 0.3s;
+  border: solid 2px #00c663;
 }
 
 #num1,
@@ -90,6 +110,31 @@ label img {
   flex-direction: row;
   justify-content: center;
   gap: 3%;
+}
+#calculat-btn,
+#reset-btn {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: solid 1px #333;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+#calculat-btn {
+  background-color: #00c663;
+  color: rgb(0, 0, 0);
+}
+#reset-btn {
+  background-color: #ff3333;
+  color: rgb(255, 255, 255);
+}
+
+#result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 /* !calculator 2 starts here one that looks normal? */
