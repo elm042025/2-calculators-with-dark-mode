@@ -27,18 +27,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 40px;
+  max-height: 70px;
 }
 
 header h1 {
   font-size: medium;
 }
 header button {
+  display: flex;
   margin-top: 1%;
   border: none;
   cursor: pointer;
   border: none;
-  background-color: #ffffff00;
+  border-radius: 1.5rem;
+  background-color: #00000046;
 }
 header button:hover {
   transition: 0.3s;
@@ -48,11 +50,19 @@ header button:active {
   transition: 0.3s;
   scale: 0.9;
 }
+#theme-toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #calculator {
   margin-top: 5%;
-  width: 475px;
+  max-width: fit-content;
   margin: 5% auto;
+  background-color: rgb(78, 151, 196);
+  border-radius: 8px;
 }
 
 #calculator-content {
@@ -63,6 +73,7 @@ header button:active {
   justify-content: center;
   align-items: center;
   padding: 5%;
+  overflow: hidden;
 }
 #calculator-content br {
   margin-top: 5px;
@@ -135,6 +146,7 @@ label img {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 /* !calculator 2 starts here one that looks normal? */
