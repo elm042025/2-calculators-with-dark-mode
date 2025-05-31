@@ -157,18 +157,24 @@ label img {
   padding: 5%;
   border: solid 3px #000000;
   border-radius: 8px;
-  background-color: rgb(84, 84, 84);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  background-color: #2e2e2e;
 }
 
 #calculator-display2 {
-  max-width: 90%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+  max-width: 100%;
+  height: 100px;
   font-size: 2rem;
-  margin: 10px auto;
+  margin-bottom: 25px;
   padding: 10px;
   text-align: right;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #eaefde;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: #a3d977;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -178,35 +184,42 @@ label img {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.equal-btn {
-  grid-column: span 4;
-  background-color: #00c663;
-  color: white;
-  font-size: larger;
-  font-weight: bold;
-}
-
-.reset-btn {
-  grid-column: span 2;
-  background-color: #ff3333;
-  color: white;
-}
-
 #calculator-btns2 button {
+  font-family: "Courier New", Courier, monospace;
   width: 100%;
-  height: 60px;
-  border-radius: 10px;
-  border: solid 1px #333;
+  height: 95px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
   cursor: pointer;
-  font-size: large;
+  font-size: xx-large;
   font-weight: bold;
+}
+#calculator-btns2 button.equal-btn {
+  margin-top: 10px;
+  border-radius: 50px;
+  grid-column: span 4;
+  background-color: #4caf50;
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#calculator-btns2 button.reset-btn {
+  border-radius: 50px;
+  grid-column: span 2;
+  background-color: #ff6f61;
+  color: white;
 }
 
 #calculator-btns2 button:hover {
-  transition: 0.2s;
-  scale: 1.1;
+  transition: 0.2s ease;
+  transform: scale(1.03);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.4);
 }
 #calculator-btns2 button:active {
-  transition: 0.2s;
-  scale: 0.9;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95) translateY(2px);
 }
