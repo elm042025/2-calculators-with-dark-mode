@@ -33,28 +33,63 @@ header {
 header h1 {
   font-size: medium;
 }
-header button {
-  display: flex;
-  margin-top: 1%;
-  border: none;
-  cursor: pointer;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: #00000046;
-}
-header button:hover {
-  transition: 0.3s;
-  scale: 1.1;
-}
-header button:active {
-  transition: 0.3s;
-  scale: 0.9;
-}
 #theme-toggle-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#theme-button {
+  width: 4rem;
+  height: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  border: none;
+  cursor: pointer;
+  border: solid 1px hsl(0, 0%, 5%);
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 80%);
+  position: relative;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+.sun-icon {
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translate(-2rem, 0);
+}
+.moon-icon {
+  transition: transform 0.3s ease;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.dark-mode #theme-button {
+  transition: background-color 0.3s ease, border 0.3s ease;
+  background-color: hsl(0, 0%, 20%);
+  border: solid 1px hsl(0, 0%, 95%);
+}
+
+.dark-mode .moon-icon {
+  transition: 0.3s ease;
+  transform: translate(2rem, 0);
+  opacity: 0;
+}
+
+.dark-mode .sun-icon {
+  transition: 0.3s ease;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#theme-button:hover {
+  transition: 0.3s ease;
+  scale: 1.05;
+}
+#theme-button:active {
+  transition: 0.3s ease;
+  scale: 0.95;
 }
 
 #calculator {
