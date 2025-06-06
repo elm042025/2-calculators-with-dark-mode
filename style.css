@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 70px;
+  height: fit-content;
 }
 
 header h1 {
@@ -188,6 +188,7 @@ label img {
 
 #calculator2 {
   max-width: fit-content;
+  height: 100vh;
   margin: 5% auto;
   padding: 5%;
   border: solid 3px #000000;
