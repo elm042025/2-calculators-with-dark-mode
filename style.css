@@ -215,12 +215,12 @@ label img {
    border-radius: 20px;
    border: none;
    background-color: #ebebed;
-   box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(0, 0, 0, 0.123);
+   box-shadow: inset -2px -2px 6px rgb(255, 255, 255, 0.8), inset 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 .dark-mode #calculator-display2 {
-   background-color: #0f0f0f;
+   background-color: #141414;
    color: white;
-   box-shadow: inset -4px -4px 8px rgb(0, 0, 0), inset 4px 4px 8px rgba(255, 255, 255, 0.125);
+   box-shadow: inset -2px -2px 6px rgb(0, 0, 0, 0.8), inset 2px 2px 6px rgba(255, 255, 255, 0.2);
 }
 
 #calculator-btns2 {
@@ -235,15 +235,16 @@ label img {
    height: 85px;
    border-radius: 50%;
    border: none;
-   box-shadow: -2px -2px 6px rgb(255, 255, 255), 2px 2px 6px rgba(0, 0, 0, 0.205);
+   box-shadow: -2px -2px 6px rgb(255, 255, 255, 0.8), 2px 2px 6px rgba(0, 0, 0, 0.2);
    background-color: #ebebed;
    cursor: pointer;
    font-size: xx-large;
    font-weight: bold;
+   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 .dark-mode #calculator-btns2 button {
-   box-shadow: -4px -4px 8px rgb(0, 0, 0), 4px 4px 8px rgba(255, 255, 255, 0.205);
-   background-color: #0f0f0f;
+   box-shadow: -2px -4px 6px rgb(0, 0, 0, 0.8), 4px 4px 6px rgba(255, 255, 255, 0.2);
+   background-color: #141414;
    color: white;
 }
 #calculator-btns2 button.equal-btn {
@@ -266,14 +267,13 @@ label img {
 }
 
 #calculator-btns2 button:hover {
-   transition: 0.1s ease;
-   transform: scale(1.03);
+   transform: scale(0.95) translateY(2px);
 }
 #calculator-btns2 button:active {
-   transition: 0.1s ease;
-   box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(0, 0, 0, 0.205);
+   box-shadow: inset -2px -2px 6px rgb(255, 255, 255, 0.8), inset 2px 2px 6px rgba(0, 0, 0, 0.205);
+   transition: transform 0.1s ease, box-shadow 0.1s ease;
    transform: scale(0.95) translateY(2px);
 }
 .dark-mode #calculator-btns2 button:active {
-   box-shadow: inset -4px -4px 8px rgb(0, 0, 0), inset 4px 4px 8px rgba(255, 255, 255, 0.205);
+   box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.8), inset 2px 2px 6px rgba(255, 255, 255, 0.2);
 }
