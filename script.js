@@ -50,11 +50,17 @@ function inpValue(value) {
 }
 
 function calculate2() {
-   const result = eval(document.getElementById("calculator-display2").value);
-   if (result === Infinity || result === -Infinity) {
-      document.getElementById("calculator-display2").value = "Can't divide by zero!";
-   } else {
-      document.getElementById("calculator-display2").value = result;
+   const display2 = document.getElementById("calculator-display2");
+   try {
+      const result = eval(display2.value);
+
+      if (result === Infinity || result === -Infinity) {
+         display2.value = "Can't divide by zero!";
+      } else {
+         display2.value = result;
+      }
+   } catch (error) {
+      display2.value = "Invalid input!";
    }
 }
 
